@@ -1,0 +1,2 @@
+# MNIST_SVM_Gui
+基于SVM模型和mnist数据集的手写数字识别系统
