@@ -1,0 +1,13 @@
+# 解析数据集二进制文件*.idx3-ubyte和*.idx1-ubyte
+# 解包得训练集mnist_train/与测试集mnist_test/
+python get_test_data.py
+python get_train_data.py
+
+# 训练模型：读取训练集mnist_train/图像，训练SVM模型并保存为svm.model
+python svm.py
+
+#GUI界面
+python predict_gui.py
+
+# 测试模型：随机读取测试集mnist_test/图像，用模型预测并输出准确率
+python svmtest.py
